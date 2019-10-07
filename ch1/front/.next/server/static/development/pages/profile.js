@@ -93,9 +93,9 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Applayout.js":
+/***/ "./components/AppLayout.js":
 /*!*********************************!*\
-  !*** ./components/Applayout.js ***!
+  !*** ./components/AppLayout.js ***!
   \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -108,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "antd");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\dev\\react_sns\\ch1\\front\\components\\Applayout.js";
+var _jsxFileName = "C:\\react_sns\\ch1\\front\\components\\AppLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1920,14 +1920,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+<<<<<<< HEAD:ch1/front/.next/server/static/development/pages/profile.js
 /* harmony import */ var _components_Applayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Applayout */ "./components/Applayout.js");
 var _jsxFileName = "C:\\dev\\react_sns\\ch1\\front\\pages\\profile.js";
+=======
+/* harmony import */ var _components_AppLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AppLayout */ "./components/AppLayout.js");
+var _jsxFileName = "C:\\react_sns\\ch1\\front\\pages\\profile.js";
+>>>>>>> 4dfca5fa9f185958ecf5369ddc417403f0e8199a:ch1/front/.next/server/static/development/pages/index.js
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 const Profile = () => {
+<<<<<<< HEAD:ch1/front/.next/server/static/development/pages/profile.js
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
@@ -1968,6 +1974,15 @@ const Profile = () => {
     },
     __self: undefined
   }, "Profile!")));
+=======
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, "Profile!"));
+>>>>>>> 4dfca5fa9f185958ecf5369ddc417403f0e8199a:ch1/front/.next/server/static/development/pages/index.js
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
@@ -1981,7 +1996,11 @@ const Profile = () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD:ch1/front/.next/server/static/development/pages/profile.js
 module.exports = __webpack_require__(/*! C:\dev\react_sns\ch1\front\pages\profile.js */"./pages/profile.js");
+=======
+module.exports = __webpack_require__(/*! C:\react_sns\ch1\front\pages\profile.js */"./pages/profile.js");
+>>>>>>> 4dfca5fa9f185958ecf5369ddc417403f0e8199a:ch1/front/.next/server/static/development/pages/index.js
 
 
 /***/ }),

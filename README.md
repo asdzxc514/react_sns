@@ -52,4 +52,4 @@
   },
 ```
 `npm i antd`  // 디자인 https://ant.design/docs/react/introduce  
-
+`npm i prop-types'  
