@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import  from '';
+import PropTypes from 'prop-types';
 import AppLayout from '../components/AppLayout';
-import { isRegExp } from 'util';
 
 const NodeBird = ({ Component }) => {
     return (
@@ -19,4 +18,9 @@ const NodeBird = ({ Component }) => {
     );
 };
 
+NodeBird.propTypes = {
+    Component: PropTypes.elementType,
+}
+
 export default NodeBird;
+

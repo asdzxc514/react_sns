@@ -1,1 +1,3 @@
-.vscode
+.vscode/
+.next/
+node_modules/
