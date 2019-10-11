@@ -200,6 +200,7 @@ const AppLayout = ({
     },
     __self: undefined
   }))), __jsx(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
+    gutter: 8,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -282,6 +283,9 @@ const AppLayout = ({
   })), __jsx(antd__WEBPACK_IMPORTED_MODULE_3__["Col"], {
     xs: 24,
     md: 12,
+    style: {
+      margin: '15px 0'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
@@ -340,6 +344,9 @@ const LoginForm = () => {
   }, [id, password]);
   return __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Form"], {
     onSubmit: onSubmitForm,
+    style: {
+      padding: '15px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19

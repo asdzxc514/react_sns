@@ -23,7 +23,7 @@ const AppLayout = ({ children }) => {
                 </Menu.Item>
             </Menu>
 
-            <Row>
+            <Row gutter={8}>
                 <Col xs={24} md={6}>
                     {dummy.isLoggedIn
                         ? <Card
@@ -42,7 +42,7 @@ const AppLayout = ({ children }) => {
                         <LoginForm />
                     }
                 </Col>
-                <Col xs={24} md={12}>
+                <Col xs={24} md={12} style={{ margin: '15px 0'}}>
                     {children}
                 </Col>
                 <Col xs={24} md={6}>
