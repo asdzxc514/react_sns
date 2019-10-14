@@ -78,7 +78,6 @@ const Signup = () => {
     return (
         <>
             <Form onSubmit={onSubmit} style={{ padding: 10 }}>
-                <TextInput value="1422" />
                 <div>
                     <label htmlFor="user-id">아이디</label>
                     <br/>
