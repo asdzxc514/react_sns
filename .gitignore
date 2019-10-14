@@ -1,3 +1,5 @@
 .vscode/
 .next/
+next/
+/next/
 node_modules/
