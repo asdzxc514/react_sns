@@ -6,6 +6,8 @@ import AppLayout from '../components/AppLayout';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from '../reducers';
+import sagaMiddleware from '../sagas/middleware';
+import rootSaga from '../sagas';
 
 const NodeBird = ({ Component, store }) => {
     return (
@@ -29,14 +31,24 @@ NodeBird.propTypes = {
     store: PropTypes.object,
 }
 
+const middleware = (store) => (next) => (action) => {
+    console.log(action); // 다른 작업들을 여기에
+    next(action);
+}
+
 export default withRedux((initialState, options) => {
     // 여기에다 store 커스터마이징
-    const middlewares = [];
-    const enhancer = compose(
+    const middlewares = [sagaMiddleware];
+    // enhancer : 향상시키다
+    const enhancer = process.env.NODE_ENV === 'production'  
+    ? compose(applyMiddleware(...middlewares))
+    : compose(
         applyMiddleware(...middlewares), 
         !options.isServer && window.__REDUX_DEVTOOLS_EXTENSION__ !== 'undefined' ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f,
-    );  // enhancer : 향상시키다
+    )
+
     const store = createStore(reducer, initialState, enhancer);
+    sagaMiddleware.run(rootSaga);
 
     return store;
 })(NodeBird);

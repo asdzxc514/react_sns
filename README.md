@@ -104,7 +104,14 @@ const reducer = (state = initialState, action) => {
 }
 
 export default reducer;
+
+
+// 사용할때는 
+import { useDispatch } from 'react-redux';
+
+dispatch(loginAction);
 ```
 
 
 `npm i next-redux-wrapper`  
+`npm i redux-saga` // 비동기 통신을 사용하기 위해  
