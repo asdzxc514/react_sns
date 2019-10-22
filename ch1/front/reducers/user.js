@@ -52,6 +52,7 @@ export default (state = initialState, action) => {
                 ...state,
                 isLoggedIn: true,
                 user: dummyUser,
+                loginData: action.data,
             };
         }
         case LOG_OUT: {
