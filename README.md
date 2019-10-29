@@ -1,5 +1,16 @@
 # react_sns
 
+초기 기본 설치  
+
+```
+npm init
+
+npm i react react-dom next next-redux-wrapper next-redux-wrapper redux-saga axios prop-types
+
+npm i -D nodemon webpack eslint eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks 
+
+npm i -g next
+```
 
 #### react_sns / front
 
@@ -112,6 +123,42 @@ import { useDispatch } from 'react-redux';
 dispatch(loginAction);
 ```
 
-
 `npm i next-redux-wrapper`  
 `npm i redux-saga` // 비동기 통신을 사용하기 위해  
+
+
+`npm i -D eslint-config-airbnb`  
+`npm i -D eslint-plugin-jsx-a11y` // 웹접근성 체크, airbnb 랑 세트  
+`npm i -D babel-eslint` // 바벨 최신 문법 사용  
+
+```js
+// .eslintrc
+// npm i -D eslint-config-airbnb eslint-plugin-jsx-a11y babel-eslint
+{
+    "parser": "bable-eslint", // 추가
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true, // 추가
+    },
+    "extends": [
+        "airbnb" // 수정
+    ],
+    "plugins": [
+        "import",
+        "react-hooks"
+    ],
+    "rules": {
+        "no-underscore-dangle": "off" // 추가 , 쓸데없는 경고 무시
+    }
+}
+```
+
+`npm i axios`  
